@@ -14,11 +14,14 @@
 
 @implementation InboxViewController
 
-- (instancetype)initWithStyle:(UITableViewStyle)style
+- (instancetype)init
 {
-    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
-        // Custom initialization
+        UIImage *inbox = [UIImage imageNamed:@"inbox"];
+        UITabBarItem *inboxTab = [[UITabBarItem alloc] initWithTitle:@"inbox" image:inbox tag:1];
+        inboxTab.badgeValue = [NSString stringWithFormat:@"i"];;
+        self.tabBarItem = inboxTab;
     }
     return self;
 }
@@ -26,12 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning

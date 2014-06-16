@@ -11,6 +11,9 @@
 		523A1C4A194FA23700DDEE68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A1C49194FA23700DDEE68 /* AppDelegate.m */; };
 		523A1C4C194FA23700DDEE68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523A1C4B194FA23700DDEE68 /* Images.xcassets */; };
 		523A1C58194FA23700DDEE68 /* SnapChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A1C57194FA23700DDEE68 /* SnapChatTests.m */; };
+		523A1C69194FA5C400DDEE68 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A1C68194FA5C400DDEE68 /* CameraViewController.m */; };
+		523A1C6C194FA73000DDEE68 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A1C6B194FA73000DDEE68 /* InboxViewController.m */; };
+		523A1C6F194FA74300DDEE68 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A1C6E194FA74300DDEE68 /* FriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,12 @@
 		523A1C51194FA23700DDEE68 /* SnapChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523A1C56194FA23700DDEE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523A1C57194FA23700DDEE68 /* SnapChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapChatTests.m; sourceTree = "<group>"; };
+		523A1C67194FA5C400DDEE68 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		523A1C68194FA5C400DDEE68 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		523A1C6A194FA73000DDEE68 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		523A1C6B194FA73000DDEE68 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		523A1C6D194FA74300DDEE68 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		523A1C6E194FA74300DDEE68 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,12 @@
 			children = (
 				523A1C48194FA23700DDEE68 /* AppDelegate.h */,
 				523A1C49194FA23700DDEE68 /* AppDelegate.m */,
+				523A1C67194FA5C400DDEE68 /* CameraViewController.h */,
+				523A1C68194FA5C400DDEE68 /* CameraViewController.m */,
+				523A1C6A194FA73000DDEE68 /* InboxViewController.h */,
+				523A1C6B194FA73000DDEE68 /* InboxViewController.m */,
+				523A1C6D194FA74300DDEE68 /* FriendsViewController.h */,
+				523A1C6E194FA74300DDEE68 /* FriendsViewController.m */,
 				523A1C4B194FA23700DDEE68 /* Images.xcassets */,
 				523A1C44194FA23700DDEE68 /* Supporting Files */,
 			);
@@ -205,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523A1C6F194FA74300DDEE68 /* FriendsViewController.m in Sources */,
+				523A1C69194FA5C400DDEE68 /* CameraViewController.m in Sources */,
+				523A1C6C194FA73000DDEE68 /* InboxViewController.m in Sources */,
 				523A1C4A194FA23700DDEE68 /* AppDelegate.m in Sources */,
 				523A1C47194FA23700DDEE68 /* main.m in Sources */,
 			);

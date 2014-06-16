@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "CameraViewController.h"
+#import "InboxViewController.h"
+#import "FriendsViewController.h"
 
 @interface AppDelegate ()
             
@@ -18,8 +21,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    UIViewController * cameraVC = [[CameraViewController alloc]init];
+    UIViewController * inboxVC = [[InboxViewController alloc]init];
+    UIViewController * friendsVC = [[FriendsViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:cameraVC];
+
+    NSArray *controllers = [NSArray arrayWithObjects:navController, inboxVC, friendsVC, nil];
+    tabBarController.viewControllers = controllers;
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController  = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
