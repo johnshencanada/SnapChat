@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyNavigationViewController.h"
 #import "CameraViewController.h"
 #import "InboxViewController.h"
 #import "FriendsViewController.h"
@@ -23,13 +24,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    
     UIViewController * cameraVC = [[CameraViewController alloc]init];
+    UINavigationController *cameraNavController = [[MyNavigationViewController alloc]initWithRootViewController:cameraVC];
     UIViewController * inboxVC = [[InboxViewController alloc]init];
+    UINavigationController *inboxNavController = [[MyNavigationViewController alloc]initWithRootViewController:inboxVC];
     UIViewController * friendsVC = [[FriendsViewController alloc]init];
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:cameraVC];
+    UINavigationController *friendsNavController = [[MyNavigationViewController alloc]initWithRootViewController:friendsVC];
 
-    NSArray *controllers = [NSArray arrayWithObjects:navController, inboxVC, friendsVC, nil];
+    NSArray *controllers = [NSArray arrayWithObjects:cameraNavController, inboxNavController, friendsNavController, nil];
     tabBarController.viewControllers = controllers;
+    tabBarController.tabBar.barTintColor = [UIColor blackColor];
     
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController  = tabBarController;

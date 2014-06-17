@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Friends";
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,34 +1,26 @@
 //
-//  CameraViewController.m
+//  MyNavigationViewController.m
 //  SnapChat
 //
 //  Created by john on 6/16/14.
 //  Copyright (c) 2014 Banana Technology. All rights reserved.
 //
 
-#import "CameraViewController.h"
+#import "MyNavigationViewController.h"
 
-@interface CameraViewController ()
+@interface MyNavigationViewController ()
 
 @end
 
-@implementation CameraViewController
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        UIImage *camera = [UIImage imageNamed:@"camera"];
-        UITabBarItem *cameraTab = [[UITabBarItem alloc] initWithTitle:@"camera" image:camera tag:0];
-        self.tabBarItem = cameraTab;
-    }
-    return self;
-}
+@implementation MyNavigationViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Camera";
+    self.navigationBar.barTintColor  = [UIColor blackColor];
+    self.navigationBar.barStyle = UIBarStyleBlackOpaque;
+
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
